@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Crimson+Pro:wght@200..900&family=Inter:opsz,wght@14..32,100..900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --font-serif: "Crimson Pro", "serif";
+      --font-serif2: "Cormorant Garamond", "serif";
+      --font-inter: "Inter", "sans-serif";
+    }
+  </style>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+
+  <!-- Title -->
+  <title>Fini Vin - Darmowe szablony stron internetowych | Damiankoduje.pl</title>
+</head>
+
+<body class="bg-white text-[#131313] font-serif">
+  <!-- Header -->
+  <header id="header" class="z-40 fixed top-0 w-full py-4 md:py-6 transition-colors duration-200">
+    <div class="container flex justify-between items-center">
+
+      <!-- Logo -->
+      <a href="index.html" class="z-50 font-serif2 text-3xl tracking-tight">Fini Vin</a>
+
+      <!-- Navigation -->
+      <div class="hidden md:flex gap-x-10 text-2xl font-extralight">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">O nas</a>
+        <a href="contact.html">Kontakt</a>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <button id="menu-btn" class="hamburger z-50 block md:hidden focus:outline-none">
+        <span class="hamburger-top bg-black"></span>
+        <span class="hamburger-middle bg-black"></span>
+        <span class="hamburger-bottom bg-black"></span>
+      </button>
+
+      <!-- Mobile Navigation -->
+      <div
+        class="mobile-menu absolute top-0 left-0 -translate-y-full transition-transform duration-500 w-full bg-white md:hidden">
+        <div class="flex flex-col gap-y-2 items-center py-20 leading-10 text-3xl font-light">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">O nas</a>
+          <a href="contact.html">Kontakt</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="pt-28 md:pt-40 md:pb-24">
+      <div class="container text-center md:max-w-3xl">
+        <p data-aos="fade-up" data-aos-delay="100" class="text-6xl md:text-8xl mb-3 font-extralight">Menu</p>
+        <h1 data-aos="fade-up" data-aos-delay="200" class="text-xl md:text-3xl font-extralight tracking-wider">
+          Velit porro eveniet veritatis assumenda optio rem, iusto dignissimos
+          quis aliquam repudiandae. Soluta, totam. Placeat a dolore?
+        </h1>
+      </div>
+    </section>
+
+    <section class="py-12 lg:px-10">
+      <div class="container py-20 lg:p-20 xl:p-32 2xl:p-48 bg-neutral-50 text-black">
+        <!-- Starters -->
+        <p class="uppercase text-2xl font-medium mb-4 text-amber-700 tracking-wide">
+          przystawki
+        </p>
+        <div class="border-t border-neutral-800"></div>
+
+        <div class="flex justify-between py-12">
+          <div class="">
+            <p class="text-2xl pb-2">Antipasto Misto</p>
+            <p class="text-lg text-neutral-700 mb-2">
+              Suszone pomidory / oliwki czarne / oliwki zielone z pestką /
+              karczochy / salamino piccante / rukola / pasta z ciecierzycy
+            </p>
+          </div>
+          <div class="text-2xl"><span>54zł</span></div>
+        </div>
+        <div class="border-t border-neutral-300"></div>
+
+        <div class="flex justify-between py-12">
+          <div class="">
+            <p class="text-2xl pb-2">Carpaccio wołowe</p>
+            <p class="text-lg text-neutral-700 mb-2">
+              Polędwica wołowa / rukola / parmezan / kapary / marynowane kurki
+              / olio Extra Vergine di Oliva
+            </p>
+          </div>
+          <div class="text-2xl"><span>48zł</span></div>
+        </div>
+        <div class="border-t border-neutral-300"></div>
+
+        <div class="flex justify-between py-12">
+          <div class="">
+            <p class="text-2xl pb-2">Mozzarella burrata</p>
+            <p class="text-lg text-neutral-700 mb-2">
+              Burrata / grillowana foccacia / sałaty / pomidory / bazylia /
+              oliwa truflowa / figowe balsamico
+            </p>
+          </div>
+          <div class="text-2xl"><span>52zł</span></div>
+        </div>
+        <div class="border-t border-neutral-300"></div>
+
+        <div class="flex justify-between pt-12 pb-28">
+          <div class="">
+            <p class="text-2xl pb-2">Krewetki w białym winie</p>
+            <p class="text-lg text-neutral-700 mb-2">
+              Krewetki / czosnek / cebula / natka / masło / białe wino / olio
+              Extra Vergine di Oliva
+            </p>
+          </div>
+          <div class="text-2xl"><span>44zł</span></div>
+        </div>
+
+        <!-- Mains -->
+        <p class="uppercase text-2xl mb-4 text-amber-700 tracking-wide">
+          dania główne
+        </p>
+        <div class="border-t border-neutral-800"></div>
+
+        <div class="flex justify-between py-12">
+          <div class="">
+            <p class="text-2xl pb-2">Stek z kalmara</p>
+            <p class="text-lg text-neutral-700 mb-2">
+              Kalmar / makaron sepia / warzywa / sos burro e vino
+            </p>
+          </div>
+          <div class="text-2xl"><span>84zł</span></div>
+        </div>
+        <div class="border-t border-neutral-300"></div>
+
+        <div class="flex justify-between py-12">
+          <div class="">
+            <p class="text-2xl pb-2">Łosoś z szafranem</p>
+            <p class="text-lg text-neutral-700 mb-2">
+              Filet z łososia / ratatouille warzywne / puree ziemniaczane /
+              sos szafranowy z cytrusami
+            </p>
+          </div>
+          <div class="text-2xl"><span>76zł</span></div>
+        </div>
+        <div class="border-t border-neutral-300"></div>
+
+        <div class="flex justify-between py-12">
+          <div class="">
+            <p class="text-2xl pb-2">Pieczona kaczka</p>
+            <p class="text-lg text-neutral-700 mb-2">
+              ½ kaczki / polenta / jabłko w karmelu / sos śliwkowy z
+              marynowanym imbirem
+            </p>
+          </div>
+          <div class="text-2xl"><span>82zł</span></div>
+        </div>
+        <div class="border-t border-neutral-300"></div>
+
+        <div class="flex justify-between pt-12 pb-20">
+          <div class="">
+            <p class="text-2xl pb-2">Polędwiczka wieprzowa</p>
+            <p class="text-lg text-neutral-700 mb-2">
+              Polędwiczka wieprzowa sous – vide / warzywa / ravioli z dynią /
+              sos carbonara
+            </p>
+          </div>
+          <div class="text-2xl"><span>84zł</span></div>
+        </div>
+
+        <!-- Dessers -->
+        <p class="uppercase text-2xl mb-4 text-amber-700 tracking-wide">
+          Desery
+        </p>
+        <div class="border-t border-neutral-800"></div>
+
+        <div class="flex justify-between py-12">
+          <div class="">
+            <p class="text-2xl pb-2">Tiramisu</p>
+            <p class="text-lg text-neutral-700 mb-2">
+              Mascarpone / ciasteczka amaretti / amaretto / kawa / kakao
+            </p>
+          </div>
+          <div class="text-2xl"><span>24zł</span></div>
+        </div>
+        <div class="border-t border-neutral-300"></div>
+
+        <div class="flex justify-between py-12">
+          <div class="">
+            <p class="text-2xl pb-2">Dolce & Salato</p>
+            <p class="text-lg text-neutral-700 mb-2">
+              Mascarpone / słony kajmak / ciasteczka amaretti / owoce sezonowe
+            </p>
+          </div>
+          <div class="text-2xl"><span>27zł</span></div>
+        </div>
+        <div class="border-t border-neutral-300"></div>
+
+        <div class="flex justify-between pt-12">
+          <div class="">
+            <p class="text-2xl pb-2">Deser florentyński</p>
+            <p class="text-lg text-neutral-700 mb-2">
+              Florentynki / mascarpone / owoce sezonowe / przecier truskawkowy
+            </p>
+          </div>
+          <div class="text-2xl"><span>28zł</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container py-24 md:py-32 xl:py-40 2xl:py-44 xl:flex justify-between gap-x-14">
+      <div class="flex flex-col md:w-3/4 xl:w-1/2 mb-14">
+        <p class="font-serif2 text-7xl mb-4 tracking-tighter">Fini Vin</p>
+        <p class="text-2xl font-light text-neutral-800 tracking-wide">
+          Fuga inventore autem possimus dignissimos laudantium provident
+          repellat nam voluptatibus labore! Eos culpa voluptatum assumenda
+          quibusdam ducimus quos suscipit qui placeat at deleniti
+          consequuntur.
+        </p>
+      </div>
+      <div class="lg:flex flex-col lg:w-1/2 tracking-wide font-light">
+        <div class="lg:flex gap-x-14">
+          <div class="flex flex-col mb-10">
+            <p class="text-3xl lg:mb-2">Lokalizacja</p>
+            <p class="text-xl text-neutral-800">
+              00-001 Warszawa,<br />
+              ul. Piotrowska 148
+            </p>
+          </div>
+          <div class="flex flex-col mb-10">
+            <p class="text-3xl lg:mb-2">Kontakt</p>
+            <a href="mailto:kontakt@finivin.pl" class="text-xl text-neutral-800 hover:text-amber-700 transition-colors">
+              kontakt@finivin.pl
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col mb-10">
+          <p class="text-3xl lg:mb-2">Godziny otwarcia</p>
+          <p class="text-xl text-neutral-800">
+            Poniedziałek - Piątek 10:00 - 21:00
+          </p>
+          <p class="text-xl text-neutral-800">
+            Sobota - Niedziela 10:00 - 23:00
+          </p>
+        </div>
+        <!-- Social Links -->
+        <div
+          class="flex flex-col xl:flex-row gap-3 xl:gap-8 text-xl text-neutral-800 font-inter font-light tracking-widest uppercase">
+          <a href="#0" class="hover:text-amber-700 transition-colors">facebook</a>
+          <a href="#0" class="hover:text-amber-700 transition-colors">instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="border-t border-neutral-200"></div>
+
+  <!-- Copyright -->
+  <div class="bg-white">
+    <div class="container font-inter py-10 tracking-wide font-light">
+      &copy; FiniVin 2025 |
+      <a href="https://damiankoduje.pl" class="hover:text-amber-700 transition-colors">Damiankoduje.pl</a>
+    </div>
+  </div>
+
+  <script src="js/aos.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    aos();
+    menu();
+  </script>
+</body>
+
+</html>

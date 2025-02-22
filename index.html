@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Crimson+Pro:wght@200..900&family=Inter:opsz,wght@14..32,100..900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --font-serif: "Crimson Pro", "serif";
+      --font-serif2: "Cormorant Garamond", "serif";
+      --font-inter: "Inter", "sans-serif";
+    }
+  </style>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/glightbox.min.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+
+  <!-- Title -->
+  <title>Fini Vin - Darmowe szablony stron internetowych | Damiankoduje.pl</title>
+</head>
+
+<body class="bg-white text-neutral-900 font-serif">
+  <!-- Header -->
+  <header id="header" class="z-40 fixed top-0 w-full py-4 md:py-6 transition-colors duration-200">
+    <div class="container flex justify-between items-center">
+
+      <!-- Logo -->
+      <a href="index.html"
+        class="logo trantion-color duration-500 text-neutral-200 z-50 font-serif2 text-3xl tracking-tight">Fini Vin</a>
+
+      <!-- Navigation -->
+      <div class="nav text-neutral-200 hidden md:flex gap-x-10 text-2xl font-extralight">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">O nas</a>
+        <a href="contact.html">Kontakt</a>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <button id="menu-btn" class="relative cursor-pointer w-[24px] h-[24px] z-50 block md:hidden focus:outline-none">
+        <span class="hamburger-top bg-white absolute top-0 left-0 w-[24px] h-[2px] transition-all duration-500"></span>
+        <span
+          class="hamburger-middle bg-white absolute top-0 left-0 w-[24px] h-[2px] transition-all duration-500"></span>
+        <span
+          class="hamburger-bottom bg-white absolute top-0 left-0 w-[24px] h-[2px] transition-all duration-500"></span>
+      </button>
+
+      <!-- Mobile Navigation -->
+      <div
+        class="mobile-menu absolute top-0 left-0 -translate-y-full transition-transform duration-500 w-full bg-white md:hidden">
+        <div class="flex flex-col gap-y-2 items-center py-20 leading-10 text-3xl font-light">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">O nas</a>
+          <a href="contact.html">Kontakt</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section
+      class="home-bg-cover text-white h-[700px] md:h-[850px] xl:h-[1000px] relative pb-10 md:pb-20 overflow-hidden">
+      <div class="container flex flex-col justify-center items-center text-center h-full">
+        <h1 data-aos="fade-up" data-aos-delay="100"
+          class="mb-5 text-7xl z-10 md:text-8xl lg:text-9xl tracking-tighter font-serif2">
+          Fini Vin
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="200"
+          class="text-2xl lg:text-3xl sm:w-2/3 2xl:w-1/2 z-10 font-extralight tracking-wide text-neutral-300">
+          Kulinarna podróż, podczas której odkryjesz bogactwo smaków oraz
+          poznasz nowe aromaty.
+        </p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="container my-20 lg:my-32 xl:my-40 2xl:my-44">
+      <div
+        class="flex flex-col gap-14 lg:gap-24 lg:flex-row md:justify-between text-center lg:text-left font-light tracking-wide">
+        <p class="text-3xl text-neutral-900 lg:text-4xl font-bold">
+          <span class="text-5xl">W</span> naszym menu króluje kuchnia
+          azjatycka w nowoczesnym wydaniu, które zachwyca bogactwem
+          orientalnych smaków i aromatów.
+        </p>
+        <div class="flex flex-col text-neutral-700 text-2xl xl:text-3xl">
+          <p class="mb-14">
+            <span class="text-3xl xl:text-4xl text-black">F</span>ugiat esse
+            magni laborum nulla dignissimos labore, ad aperiam repellendus
+            expedita. Animi?
+          </p>
+          <p>
+            <span class="text-3xl xl:text-4xl text-black">N</span>obis ullam
+            soluta ab! Perferendis aliquam, magnam unde sequi doloremque
+            dolores consequatur enim vitae deserunt inventore pariatur
+            eveniet.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section
+      class="container mb-20 lg:mb-32 xl:mb-40 2xl:my-44 grid grid-cols-2 gap-3 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2">
+      <div class="lg:row-span-2">
+        <a href="images/gallery/gallery-01@2x.jpg" class="glightbox">
+          <img src="images/gallery/gallery-01.jpg" class="w-full h-full object-cover" alt="" loading="lazy" />
+        </a>
+      </div>
+      <div class="">
+        <a href="images/gallery/gallery-02@2x.jpg" class="glightbox">
+          <img src="images/gallery/gallery-02.jpg" class="w-full h-full object-cover" alt="" loading="lazy" />
+        </a>
+      </div>
+      <div class="">
+        <a href="images/gallery/gallery-03@2x.jpg" class="glightbox">
+          <img src="images/gallery/gallery-03.jpg" class="w-full" alt="" loading="lazy" />
+        </a>
+      </div>
+      <div class="">
+        <a href="images/gallery/gallery-04@2x.jpg" class="glightbox">
+          <img src="images/gallery/gallery-04.jpg" class="w-full h-full object-cover" alt="" loading="lazy" />
+        </a>
+      </div>
+      <div class="col-span-2 lg:col-auto">
+        <a href="images/gallery/gallery-05@2x.jpg" class="glightbox">
+          <img src="images/gallery/gallery-05.jpg" class="w-full" alt="" loading="lazy" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="container mb-20 lg:mb-32 xl:mb-40 sm:w-5/6 lg:w-full tracking-wide">
+      <h2 class="text-center text-4xl md:text-6xl font-extralight pb-8 md:pb-16 xl:pb-24">Opinie klientów</h2>
+      <div class="swiper font-inter font-light text-black text-lg">
+        <div class="swiper-wrapper">
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <p class="mb-10 text-center lg:text-start xl:leading-8">
+              "Szczerze polecam, restauracja warta pięciu gwiazdek, pyszne
+              jedzenie. Obsługa na wysokim poziomie. Na pewno jeszcze tu
+              wrócimy."
+            </p>
+            <div class="flex gap-x-4">
+              <img src="images/avatars/user-01.jpg" class="max-w-14 h-full rounded-full" alt="" />
+              <div class="flex flex-col justify-center">
+                <p class="font-medium text-lg leading-5 font">Damian Mane</p>
+                <p class="text-neutral-700 text-base">Podróżnik.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <p class="mb-10 text-center lg:text-start xl:leading-8">
+              "Doskonała restauracja. Świetne wnętrze, piękne przyrządzone i
+              smaczne potrawy. Najlepsza jakość. Wspaniały aromat w
+              restauracji."
+            </p>
+            <div class="flex gap-x-4">
+              <img src="images/avatars/user-02.jpg" class="max-w-14 h-full rounded-full" alt="" />
+              <div class="flex flex-col justify-center">
+                <p class="font-medium text-lg leading-5">Lena Moni</p>
+                <p class="text-neutral-700 text-base">Krytyk Kulinarny.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <p class="mb-10 text-center lg:text-start xl:leading-8">
+              "Restauracja piękna i klimatyczna. Jedna z najbardziej
+              klimatycznych restauracji w jakiej byłem, bardzo dobre jedzenie
+              i wino. Polecam każdemu."
+            </p>
+            <div class="flex gap-x-4">
+              <img src="images/avatars/user-03.jpg" class="max-w-14 h-full rounded-full" alt="" />
+              <div class="flex flex-col justify-center">
+                <p class="font-medium text-lg leading-5">Nikola Niki</p>
+                <p class="text-neutral-700 text-base">Kawiarnia pod Rossą.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <p class="mb-10 text-center lg:text-start xl:leading-8">
+              "Restauracja zasługuje na gwiazdkę Michelin. Jedzenie pierwsza
+              klasa. Pyszne jedzenie, rezerwacja solika. Na pewno wrócę
+              jeszcze nie raz."
+            </p>
+            <div class="flex gap-x-4">
+              <img src="images/avatars/user-04.jpg" class="max-w-14 h-full rounded-full" alt="" />
+              <div class="flex flex-col justify-center">
+                <p class="font-medium text-lg leading-5">Agnieszka Kapi</p>
+                <p class="text-neutral-700 text-base">Bloger kulinarny.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-50">
+    <div class="container py-24 md:py-32 xl:py-40 2xl:py-44 xl:flex justify-between gap-x-14">
+      <div class="flex flex-col md:w-3/4 xl:w-1/2 mb-14">
+        <p class="font-serif2 text-7xl mb-4 tracking-tighter">Fini Vin</p>
+        <p class="text-2xl font-light text-neutral-800 tracking-wide">
+          Fuga inventore autem possimus dignissimos laudantium provident
+          repellat nam voluptatibus labore! Eos culpa voluptatum assumenda
+          quibusdam ducimus quos suscipit qui placeat at deleniti
+          consequuntur.
+        </p>
+      </div>
+      <div class="lg:flex flex-col lg:w-1/2 tracking-wide font-light">
+        <div class="lg:flex gap-x-14">
+          <div class="flex flex-col mb-10">
+            <p class="text-3xl lg:mb-2">Lokalizacja</p>
+            <p class="text-xl text-neutral-800">
+              00-001 Warszawa,<br />
+              ul. Piotrowska 148
+            </p>
+          </div>
+          <div class="flex flex-col mb-10">
+            <p class="text-3xl lg:mb-2">Kontakt</p>
+            <a href="mailto:kontakt@finivin.pl" class="text-xl text-neutral-800 hover:text-amber-700 transition-colors">
+              kontakt@finivin.pl
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col mb-10">
+          <p class="text-3xl lg:mb-2">Godziny otwarcia</p>
+          <p class="text-xl text-neutral-800">
+            Poniedziałek - Piątek 10:00 - 21:00
+          </p>
+          <p class="text-xl text-neutral-800">
+            Sobota - Niedziela 10:00 - 23:00
+          </p>
+        </div>
+        <!-- Social Links -->
+        <div
+          class="flex flex-col xl:flex-row gap-3 xl:gap-8 text-xl text-neutral-800 font-inter font-light tracking-widest uppercase">
+          <a href="#0" class="hover:text-amber-700 transition-colors">facebook</a>
+          <a href="#0" class="hover:text-amber-700 transition-colors">instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="border-t border-neutral-200"></div>
+
+  <!-- Copyright -->
+  <div class="bg-neutral-50">
+    <div class="container font-inter py-10 tracking-wide font-light">
+      &copy; FiniVin 2025 |
+      <a href="https://damiankoduje.pl" class="hover:text-amber-700 transition-colors">Damiankoduje.pl</a>
+    </div>
+  </div>
+
+  <script src="js/aos.js"></script>
+  <script src="js/glightbox.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    aos();
+    menu();
+    glightbox();
+    swiper();
+  </script>
+</body>
+
+</html>

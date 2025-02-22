@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Crimson+Pro:wght@200..900&family=Inter:opsz,wght@14..32,100..900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --font-serif: "Crimson Pro", "serif";
+      --font-serif2: "Cormorant Garamond", "serif";
+      --font-inter: "Inter", "sans-serif";
+    }
+  </style>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+
+  <!-- Title -->
+  <title>Fini Vin - Darmowe szablony stron internetowych | Damiankoduje.pl</title>
+</head>
+
+<body class="bg-white text-[#131313] font-serif">
+
+  <!-- Header -->
+  <header id="header" class="z-40 fixed top-0 w-full py-4 md:py-6 transition-colors duration-200">
+    <div class="container flex justify-between items-center">
+
+      <!-- Logo -->
+      <a href="index.html" class="z-50 font-serif2 text-3xl tracking-tight">Fini Vin</a>
+
+      <!-- Navigation -->
+      <div class="hidden md:flex gap-x-10 text-2xl font-extralight">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">O nas</a>
+        <a href="contact.html">Kontakt</a>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <button id="menu-btn" class="hamburger z-50 block md:hidden focus:outline-none">
+        <span class="hamburger-top bg-black"></span>
+        <span class="hamburger-middle bg-black"></span>
+        <span class="hamburger-bottom bg-black"></span>
+      </button>
+
+      <!-- Mobile Navigation -->
+      <div
+        class="mobile-menu absolute top-0 left-0 -translate-y-full transition-transform duration-500 w-full bg-white md:hidden">
+        <div class="flex flex-col gap-y-2 items-center py-20 leading-10 text-3xl font-light">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">O nas</a>
+          <a href="contact.html">Kontakt</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container pt-24 xl:pt-32 pb-20 lg:pb-32 font-light">
+      <div class="lg:flex justify-between items-center lg:gap-x-7 mb-7 lg:mb-20 2xl:mb-28">
+        <div class="flex flex-col mb-10 lg:w-1/2 2xl:w-2/5">
+          <h1 class="text-3xl lg:text-4xl xl:text-5xl mb-5 xl:mb-8">
+            Inspirację aromatów.
+          </h1>
+          <p class="text-2xl xl:text-3xl mb-5 xl:mb-7 font-extralight">
+            <span class="text-3xl xl:text-5xl">N</span>eque, earum totam
+            perferendis veritatis maiores delectus deleniti dicta quos aperiam
+            doloribus! Itaque, hic. Architecto minus, hic quod fugiat eos amet
+            ut, error veniam officia deserunt illo, veritatis voluptatem
+            perspiciatis labore neque molestias saepe.
+          </p>
+          <p class="text-2xl xl:text-3xl font-medium text-neutral-700">
+            <span class="text-3xl xl:text-5xl">D</span>oloremque sunt
+            explicabo eum deserunt officiis, delectus deleniti dicta quos
+            aperiam doloribus!
+          </p>
+        </div>
+        <img src="images/about/about-01.jpg" class="w-full lg:w-1/2" alt="" />
+      </div>
+
+      <div class="lg:flex justify-between items-center lg:gap-x-7 mb-7 lg:mb-20 2xl:mb-28">
+        <div class="flex flex-col mb-10 lg:w-1/2 2xl:w-2/5 order-2">
+          <h2 class="text-3xl lg:text-4xl xl:text-5xl mb-5 xl:mb-8">
+            Styl i Sztuka.
+          </h2>
+          <p class="text-2xl xl:text-3xl mb-5 xl:mb-7 font-extralight font-inter">
+            <span class="text-3xl xl:text-5xl">N</span>uas numquam ut, dolorum
+            adipisci vitae dolores unde cumque maxime sequi rem blanditiis
+            quisquam sapiente nam eveniet, laboriosam alias ducimus aperiam
+            tempora!
+          </p>
+          <p class="text-2xl xl:text-3xl mb-5 xl:mb-7 font-extralight font-inter">
+            <span class="text-3xl xl:text-5xl">J</span>oblan ditiis magni
+            sapiente, ad neque laboriosam eius non.
+          </p>
+          <p class="text-2xl xl:text-3xl font-extralight font-inter">
+            Iusto mollitia nihil odit, itaque excepturi.
+          </p>
+        </div>
+        <img src="images/about/about-02.jpg" class="w-full lg:w-1/2 order-1" alt="" />
+      </div>
+
+      <div class="lg:flex justify-between items-center lg:gap-x-7">
+        <div class="flex flex-col mb-10 lg:w-1/2 2xl:w-2/5">
+          <h3 class="text-3xl lg:text-4xl xl:text-5xl mb-5 xl:mb-8">
+            Pasja tworzenia.
+          </h3>
+          <p class="text-2xl xl:text-3xl mb-5 xl:mb-7 font-medium">
+            <span class="text-3xl xl:text-5xl">D</span>oloremque sunt
+            explicabo eum deserunt officiis, delectus deleniti dicta quos
+            aperiam doloribus!
+          </p>
+          <p class="text-2xl xl:text-3xl font-extralight text-neutral-700">
+            <span class="text-3xl xl:text-5xl">N</span>eque, earum totam
+            perferendis veritatis maiores delectus deleniti dicta quos aperiam
+            doloribus! Itaque, hic. Architecto minus, hic quod fugiat eos
+            amet.
+          </p>
+        </div>
+        <img src="images/about/about-03.jpg" class="w-full lg:w-1/2" alt="" />
+      </div>
+    </section>
+  </main>
+
+  <div class="border-t border-neutral-200"></div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container py-24 md:py-32 xl:py-40 2xl:py-44 xl:flex justify-between gap-x-14">
+      <div class="flex flex-col md:w-3/4 xl:w-1/2 mb-14">
+        <p class="font-serif2 text-7xl mb-4 tracking-tighter">Fini Vin</p>
+        <p class="text-2xl font-light text-neutral-800 tracking-wide">
+          Fuga inventore autem possimus dignissimos laudantium provident
+          repellat nam voluptatibus labore! Eos culpa voluptatum assumenda
+          quibusdam ducimus quos suscipit qui placeat at deleniti
+          consequuntur.
+        </p>
+      </div>
+      <div class="lg:flex flex-col lg:w-1/2 tracking-wide font-light">
+        <div class="lg:flex gap-x-14">
+          <div class="flex flex-col mb-10">
+            <p class="text-3xl lg:mb-2">Lokalizacja</p>
+            <p class="text-xl text-neutral-800">
+              00-001 Warszawa,<br />
+              ul. Piotrowska 148
+            </p>
+          </div>
+          <div class="flex flex-col mb-10">
+            <p class="text-3xl lg:mb-2">Kontakt</p>
+            <a href="mailto:kontakt@finivin.pl" class="text-xl text-neutral-800 hover:text-amber-700 transition-colors">
+              kontakt@finivin.pl
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col mb-10">
+          <p class="text-3xl lg:mb-2">Godziny otwarcia</p>
+          <p class="text-xl text-neutral-800">
+            Poniedziałek - Piątek 10:00 - 21:00
+          </p>
+          <p class="text-xl text-neutral-800">
+            Sobota - Niedziela 10:00 - 23:00
+          </p>
+        </div>
+        <!-- Social Links -->
+        <div
+          class="flex flex-col xl:flex-row gap-3 xl:gap-8 text-xl text-neutral-800 font-inter font-light tracking-widest uppercase">
+          <a href="#0" class="hover:text-amber-700 transition-colors">facebook</a>
+          <a href="#0" class="hover:text-amber-700 transition-colors">instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="border-t border-neutral-200"></div>
+
+  <!-- Copyright -->
+  <div class="bg-white">
+    <div class="container font-inter py-10 tracking-wide font-light">
+      &copy; FiniVin 2025 |
+      <a href="https://damiankoduje.pl" class="hover:text-amber-700 transition-colors">Damiankoduje.pl</a>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script>
+    menu();
+  </script>
+</body>
+
+</html>

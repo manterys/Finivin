@@ -1,0 +1,121 @@
+:root {
+  --color-black: black;
+  --src-home-bg: url("../images/home.jpg");
+}
+/* Container */
+.container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+/* sm */
+@media (width >= 24rem) { 
+  .container {
+    padding-inline: 1rem;
+  }
+}
+/* lg */
+@media (width >= 32rem) {
+  .container {
+   padding-inline: 4rem;
+  }
+}
+/* xl */
+@media (width >= 36rem) {
+  .container {
+    padding-inline: 5rem;
+  }
+}
+/* 2xl */
+@media (width >= 42rem) {
+  .container {
+    padding-inline: 6rem;
+  }
+}
+
+/* Hamburger Menu */
+.hamburger-middle {
+  transform: translateY(8px);
+}
+.hamburger-bottom {
+  transform: translateY(16px);
+}
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+  background-color: var(--color-black);
+}
+.open .hamburger-middle {
+  opacity: 0;
+}
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+  background-color: var(--color-black);
+}
+.open .logo {
+  color: var(--color-black);
+}
+/* Header Scrolled */
+.scrolled {
+  background-color: white;
+}
+.scrolled .logo {
+  color: var(--color-black);
+}
+.scrolled .nav a {
+  color: var(--color-black);
+}
+.scrolled .hamburger-top,
+.scrolled .hamburger-middle,
+.scrolled .hamburger-bottom {
+  background-color: var(--color-black);
+}
+
+/* Home Background Cover */
+.home-bg-cover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background:  var(--src-home-bg) no-repeat center center/cover;
+  animation: home-bg-cover-scale 30s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes home-bg-cover-scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+.home-bg-cover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Testimonials */
+.swiper {
+  padding-bottom: 5rem;
+}
+@media (min-width: 64rem) { 
+  .swiper {
+    padding-bottom: 9rem;
+  }
+ }
+.swiper-slide {
+  position: relative;
+  cursor: pointer;
+}
+.swiper-pagination-bullet {
+  margin: 0 6px;
+  background-color: #0c0b0b;
+  width: 12px;
+  height: 12px;
+  transition: background-color 0.2s ease;
+}
